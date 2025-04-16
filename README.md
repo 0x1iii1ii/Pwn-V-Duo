@@ -16,8 +16,8 @@ All credit goes to <a href=https://github.com/TheOfficialFloW>TheOfficialFloW</a
 ## Support RISC-V Boards
 
 - [x] <b>Milk-V Duo</b><br>
-- [X] <b>Milk-V Duo 256M</b><br>
-- [ ] <b>Milk-V Duo S</b>  [un-tested] <br>
+- [ ] <b>Milk-V Duo 256M</b> [WIP] <br>
+- [ ] <b>Milk-V Duo S</b> [WIP] <br>
 - [ ] <b>LicheeRV Nano</b> [WIP] <br>
 
 ## Requirements
