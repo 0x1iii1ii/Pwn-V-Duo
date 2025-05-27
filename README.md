@@ -32,7 +32,7 @@ All credit goes to <a href=https://github.com/TheOfficialFloW>TheOfficialFloW</a
 
 ## Installation
 
-1. Download the image from the official release [here](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.4/arduino-milkv-duo-sd-v1.1.4.img.zip).
+1. Download the image from the official release [duo](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.4/arduino-milkv-duo-sd-v1.1.4.img.zip), [duo 256M](arduino-milkv-duo256m-sd-v1.1.4.img.zip), [duo s](arduino-milkv-duos-sd-v1.1.4.img.zip).
 
 2. Use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/) tool to write the image to the SD card.
 3. Plug your device to your PC via USB type-c port and wait a few seconds until you hear the device connect sound.
