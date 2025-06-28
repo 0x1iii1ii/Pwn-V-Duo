@@ -5,7 +5,7 @@ PPPwn PS4 exploit on firmware version 11.00 or below.
 
 ## Credits
 
-All credit goes to <a href=https://github.com/TheOfficialFloW>TheOfficialFloW</a>, <a href=https://github.com/xfangfang>xfangfang</a>, <a href=https://github.com/SiSTR0>SiSTR0</a> and many other people who contributed to PS4 scene.<br><br>
+All credit goes to <a href=https://github.com/TheOfficialFloW>TheOfficialFloW</a>, <a href=https://github.com/xfangfang>xfangfang</a>, <a href=https://github.com/SiSTR0>SiSTR0</a> and many other people who contributed to PS4 scene.<br>
 
 ## Note
 
@@ -16,21 +16,21 @@ All credit goes to <a href=https://github.com/TheOfficialFloW>TheOfficialFloW</a
 ## Support RISC-V Boards
 
 - [x] <b>Milk-V Duo</b><br>
-- [ ] <b>Milk-V Duo 256M</b> [WIP] <br>
-- [ ] <b>Milk-V Duo S</b> [WIP] <br>
-- [ ] <b>LicheeRV Nano</b> [WIP] <br>
+- [x] <b>Milk-V Duo 256M</b> <br>
+- [x] <b>Milk-V Duo S</b> <br>
+- [x] <b>LicheeRV Nano</b> <br>
 
 ## Requirements
 
 - One of devices above
 - SD Card 4GB or above
-- Ethernet Cable (You need to solder for Duo/Dou 256M)
+- Ethernet Cable (You need to solder for Duo/Dou 256M/LicheeRV Nano)
 - USB Type-C
 - A USB drive with exFAT32 formatted (only use for the first time to load GoldHEN)
 - PC/Laptop for configuration
 
 
-## Installation
+## Installation for Milk-V
 
 1. Download the image from the official release [duo](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.4/arduino-milkv-duo-sd-v1.1.4.img.zip), [duo 256M](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.4/arduino-milkv-duo256m-sd-v1.1.4.img.zip), [duo s emmc](https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.4/arduino-milkv-duos-emmc-v1.1.4.zip).
 
@@ -39,7 +39,24 @@ All credit goes to <a href=https://github.com/TheOfficialFloW>TheOfficialFloW</a
 4. Download <a href=https://drive.google.com/file/d/1pLikKXgdJNWqmylq8UYwXPDGaEDfxjNG>MobaXterm</a> and unzip to use.
     - Open the MobaXterm remote login software, choose Session->SSH, and enter the static IP address: `192.168.42.1`<br>
     - Click OK, enter the login name `root` and password `milkv`
-5. You have successfully logged in. Download <a href=https://github.com/0x1iii1ii/Pwn-V-Duo/releases/download/1.0.0/Pwn-V-Duo-v1.0.0.zip>Pwn-V-Duo</a> from release pages or from GitHub repo, unzip and copy folder `Pwn-V-Duo` by drag and drop the files to the `/root` directory in MobaXterm, it will copy the files to the device. <be>
+5. You have successfully logged in. Now download <a href=https://github.com/0x1iii1ii/Pwn-V-Duo/releases/download/1.0.0/Pwn-V-Duo-v1.0.0.zip>Pwn-V-Duo</a> from release pages or from GitHub repo, unzip and copy folder `Pwn-V-Duo` by drag and drop the files to the `/root` directory in MobaXterm, it will copy the files to the device. <be>
+6. After finish copy, paste this cmd, and follow the instructions.
+
+```sh
+cd Pwn-V-Duo
+chmod +x install.sh
+./install.sh
+```
+
+## Installation for LicheeRV Nano
+
+1. Download the image from the official release [here](https://github.com/sipeed/LicheeRV-Nano-Build/releases), then extract the `img` file.
+2. Use [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/) tool to write the image to the SD card.
+3. Plug your device to your PC via USB type-c port and wait a few seconds until you hear the device connect sound.
+4. Download <a href=https://drive.google.com/file/d/1pLikKXgdJNWqmylq8UYwXPDGaEDfxjNG>MobaXterm</a> and unzip to use.
+    - Open the MobaXterm remote login software, choose Session->SSH, and enter the static IP address: `10.147.5.1`<br>
+    - Click OK, enter the login name `root` and password `root`
+5. You have successfully logged in. Now download <a href=https://github.com/0x1iii1ii/Pwn-V-Duo/releases/download/1.0.0/Pwn-V-Duo-v1.0.0.zip>Pwn-V-Duo</a> from release pages or from GitHub repo, unzip and copy folder `Pwn-V-Duo` by drag and drop the files to the `/root` directory in MobaXterm, it will copy the files to the device. <be>
 6. After finish copy, paste this cmd, and follow the instructions.
 
 ```sh
